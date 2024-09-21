@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cta .btn {
+    background-color: #ff007a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    background-color: #fce4ec;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    margin: 10px;
+}
+
+.btn {
+    background-color: #ff007a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn.secondary {
+    background-color: #f06292;
+}
+
+.services {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-box {
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+    background-color: #fce4ec;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-services .service {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* Tablets and iPads (768px to 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .services .service-box,
+    .our-services .service {
+        width: 45%;
+        margin: 15px auto;
+    }
+    
+    .hero h2 {
+        font-size: 28px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Phones (up to 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .services .service-box,
+    .our-services .service {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .cta .btn {
+        padding: 8px 15px;
+    }
+}
